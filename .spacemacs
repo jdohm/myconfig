@@ -358,7 +358,8 @@ you should place your code here."
       (sp-local-pair modes (car pair) (cdr pair)
                      :when '(:rem sp-in-math-p))))
 
-
+  ;; Use links with IDs in Org Mode
+  (setq org-id-link-to-org-use-id t)
 
   ;; To Do settings
   (setq org-todo-keywords
