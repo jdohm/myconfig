@@ -119,10 +119,7 @@ fi
 #enable vi mode for bash
 set -o vi
 alias config='/usr/bin/git --git-dir=/home/jannis/.myconfig/ --work-tree=/home/jannis'
-# works without Gnome
-# alias open='xdg-open'
-# ingores warnings (xdg-open displays them in the terminal which run xdg-open)
-alias open='gio open'
+alias open='xdg-open'
 
 #!/bin/sh
 
