@@ -121,6 +121,10 @@ set -o vi
 alias config='/usr/bin/git --git-dir=/home/jannis/.myconfig/ --work-tree=/home/jannis'
 alias open='xdg-open'
 
+# path for gcc
+export PATH="$PATH:$HOME/opt/gcc-arm-none-eabi-9-2020-q2-update/bin"
+alias agcc='arm-none-eabi-gcc'
+
 #!/bin/sh
 
 ##	+-----------------------------------+-----------------------------------+
