@@ -15,13 +15,13 @@
 
 (spacemacs|define-jump-handlers latex-mode)
 
-(defvar latex-build-command (if (executable-find "latexmk") "LatexMk" "LaTeX")
+(defvar latex-build-command ("LatexMk")
   "The default command to use with `SPC m b'")
 
 (defvar latex-enable-auto-fill t
   "Whether to use auto-fill-mode or not in tex files.")
 
-(defvar latex-enable-folding nil
+(defvar latex-enable-folding t
   "Whether to use `TeX-fold-mode' or not in tex/latex buffers.")
 
 (defvar latex-nofill-env '("equation"
@@ -29,5 +29,6 @@
                            "align"
                            "align*"
                            "tabular"
+                           "tabu"
                            "tikzpicture")
   "List of environment names in which `auto-fill-mode' will be inhibited.")
