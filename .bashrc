@@ -120,6 +120,7 @@ fi
 set -o vi
 alias config='/usr/bin/git --git-dir=/home/jannis/.myconfig/ --work-tree=/home/jannis'
 alias open='xdg-open'
+alias gplot='LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libreadline.so.8 gnuplot'
 
 # path for gcc
 export PATH="$PATH:$HOME/opt/gcc-arm-none-eabi-9-2020-q2-update/bin"
