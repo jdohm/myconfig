@@ -15,7 +15,7 @@
 
 (spacemacs|define-jump-handlers latex-mode)
 
-(defvar latex-build-command ("LatexMk")
+(defvar latex-build-command (if (executable-find "latexmk") "LatexMk" "LaTeX")
   "The default command to use with `SPC m b'")
 
 (defvar latex-enable-auto-fill t
