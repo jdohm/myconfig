@@ -541,4 +541,8 @@ unset bash_prompt
 
 
 ### EOF ###
-export PATH="$PATH:$HOME/opt/gcc-arm-none-eabi-9-2020-q2-update/bin"
+## add STM32cubeProgrammer to path (for solokey)
+export PATH=$PATH:/home/jannis/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin
+
+## setup myconfig git alias
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'

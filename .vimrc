@@ -17,3 +17,6 @@ set showcmd             " show command in bottom bar
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
+
+" use the system clipboard
+set clipboard=unnamedplus
