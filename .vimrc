@@ -3,7 +3,7 @@ set clipboard=unnamedplus " use system clipboad
 set hlsearch " Enable search highlighting
 set ignorecase " Ignore case when searching
 set mouse=a
-colorscheme desert
+"colorscheme desert
 set showcmd             " show command in bottom bar
 " turn hybrid line numbers on
 :set number relativenumber
@@ -20,3 +20,15 @@ set showcmd             " show command in bottom bar
 
 " use the system clipboard
 set clipboard=unnamedplus
+" nordtheme.com
+let g:nord_cursor_line_number_background = 1
+let g:nord_italic = 1
+let g:nord_underline = 1
+call plug#begin()
+Plug 'arcticicestudio/nord-vim'
+call plug#end()
+"colorscheme nord
+""daculastheme
+"packadd! dracula
+"syntax enable
+"colorscheme dracula
